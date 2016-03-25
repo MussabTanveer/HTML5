@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Heading</title>
+    </head>
+    <body>
+        <h2>Pattern Matching Table</h2>
+        <p>Suppose <b>P = aaba</b></p>
+        <p>Let <i>Q<sub>i</sub></i> denote the initial substring of P of length <i>i</i>, hence</p>
+        <p><i>Q<sub>0</sub>=^, Q<sub>1</sub>=a, Q<sub>2</sub>=a<sup>2</sup>, Q<sub>3</sub>=a<sup>2</sup>b, Q<sub>4</sub>=a<sup>2</sup>ba</i></p>
+        <p>Let f(<i>Q<sub>i</sub></i>,<i>t</i>) : entry in table in row <i>Q<sub>i</sub></i> and column <i>t</i>.</p>
+        <table>
+            <tr>
+                <th></th>
+                <th scope="col">a</th>
+                <th scope="col">b</th>
+                <th scope="col">x</th>
+            </tr>
+            <tr>
+                <th scope="row"><i>Q<sub>0</sub></i></th>
+                <td><i>Q<sub>1</sub></i></td>
+                <td><i>Q<sub>0</sub></i></td>
+                <td><i>Q<sub>0</sub></i></td>
+            </tr>
+            <tr>
+                <th scope="row"><i>Q<sub>1</sub></i></th>
+                <td><i>Q<sub>2</sub></i></td>
+                <td><i>Q<sub>0</sub></i></td>
+                <td><i>Q<sub>0</sub></i></td>
+            </tr>
+            <tr>
+                <th scope="row"><i>Q<sub>2</sub></i></th>
+                <td><i>Q<sub>2</sub></i></td>
+                <td><i>Q<sub>3</sub></i></td>
+                <td><i>Q<sub>0</sub></i></td>
+            </tr>
+            <tr>
+                <th scope="row"><i>Q<sub>3</sub></i></th>
+                <td><i>Q<sub>4</sub></i></td>
+                <td><i>Q<sub>0</sub></i></td>
+                <td><i>Q<sub>0</sub></i></td>
+            </tr>
+        </table>
+    </body>
+</html>
