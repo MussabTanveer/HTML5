@@ -1,2 +1,2 @@
 # HTML5
-HTML5 Practice
+This repository contains web pages of HTML5 Practice & Assignments.
