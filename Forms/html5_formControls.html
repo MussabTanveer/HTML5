@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Form Controls</title>
+</head>
+<body>
+    <form action="http://www.example.com/login/" method="post">
+    
+        <!-- html5 Form Validation -->
+        <div>
+            <label for="username">Username:</label>
+            <input id="username" type="text" name="username"  required /><br /><br />
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" required="required" /><br/><br/>
+        </div>
+        
+        <!-- html5 Date Input -->
+        <div>
+            <label for="departure">Departure date:</label>
+            <input id="departure" type="date" name="depart" />
+        </div>
+        
+        <!-- html5 Email & URL Input -->
+        <div>
+            <p>Please enter your email address:</p>
+            <input type="email" name="email" />
+            <p>Please enter your website address:</p>
+            <input type="url" name="website" />
+            <input type="submit" value="Submit" /> 
+        </div>
+        
+        <!-- html5 Search Input -->
+        <div>
+            <p>Search:</p>
+            <input type="search" name="search" placeholder="Enter keyword" />
+            <input type="submit" value="Search" /> 
+        </div>
+        
+    </form> 
+</body>
+</html>
