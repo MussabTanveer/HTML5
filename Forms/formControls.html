@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Structure and Controls</title>
+</head>
+<body>
+    <form action="http://www.example.com" method="GET">
+    
+        <p>This is where the form elemnts will appear</p>
+        <p>Username:
+            <input type="text" name="username" size="15" maxlength="30" />
+        </p>
+        
+        <p>Password:
+            <input type="password" name="password" size="15" maxlength="30" />
+        </p>
+        
+        <p>Give your review about this page in the comment below. <br/>
+            <textarea name="comments" cols="20" rows="4">Comments here...</textarea>
+        </p>
+        
+        <p>Select your favorite flower: <br/>
+            <input type="radio" name="flower" value="rose" checked/>Rose
+            <input type="radio" name="flower" value="jasmine"/>Jasmine
+            <input type="radio" name="flower" value="lilly"/>Lilly
+        </p>
+        
+        <p>Select your favorite movie(s). <br/>
+            <input type="checkbox" name="movie" value="superman" checked/>Superman
+            <input type="checkbox" name="movie" value="batman"/>Batman
+            <input type="checkbox" name="movie" value="spiderman"/>Spiderman
+        </p>
+        
+        <p>Which device do you prefer?
+            <select  name="devices">
+                <option value="pc" selected>PC</option>
+                <option value="laptop">Laptop</option>
+                <option value="tablet">Tablet</option>
+                <option value="smartphone">Smartphone</option>
+            </select>
+        </p>
+        
+        <p>Which games do you play? (You can select more than one option by holding   down control on a PC or command key on a Mac   while selecting different options.)</p>
+        <select name="games" size="5" multiple>
+            <option value="cricket" selected>Cricket</option>
+            <option value="football">Football</option>
+            <option value="basketball">Basketball</option>
+            <option value="hockey">Hockey</option>
+            <option value="badminton">Badminton</option>
+        </select>
+        
+        <p>Upload your CV in PDF format.</p>
+        <input type="file" name="cv"/> <br/>
+        <input type="submit" value="Upload"/>
+        
+        <p>Subscribe to our newsletter</p>
+        <input type="text" name="email"/>
+        <input type="submit" name="subscribe" value="Subscribe"/>
+        
+        <p>Subscribe to our email list:</p>
+        <input type="text" name="email" />
+        <input type="image" src="subscribe.png" width="110" height="30" />
+        
+        <br/><br/>
+        <button><img src="redArrow.png" alt="add" width="10" height="10" /> Add</button>
+        <br/>
+        <input type="hidden" name="bookmark" value="lyrics" />
+                
+        <br/><br/>
+        <label>Age: <input type="text" name="age" /></label> <br/ >
+        Gender:
+        <input id="female" type="radio" name="gender" value="f">
+        <label for="female">Female</label>
+        <input id="male" type="radio" name="gender" value="m">
+        <label for="male">Male</label>
+        
+        <br/><br/>
+        <fieldset>
+            <legend>Contact details</legend>
+            <label>Email:<br />
+            <input type="text" name="email" /></label><br />
+            <label>Mobile:<br />
+            <input type="text" name="mobile" /></label><br />
+            <label>Telephone:<br />
+            <input type="text" name="telephone" /></label>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
